@@ -1,0 +1,190 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, sans-serif;
+    background-color: white;
+}
+
+.upper{
+    position: relative;
+    color: rgb(2, 0, 0);
+    width: 100%;
+    background-color: #c0c0c0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.C{
+    color: green;
+}
+
+.R{
+    color: blue;
+}
+
+.U{
+    color: orange;
+}
+
+.D{
+    color: red;
+}
+
+.wrapper{
+    position: fixed;
+    left: 10%;
+    top: 20%;
+    width: 80%;
+    border: 1px solid black;
+    box-shadow: 0 0 5px slategray;
+    overflow-y: auto;
+    height: auto;
+    max-height: 70%;
+}
+
+.smallWrapper{
+    position: fixed;
+    top: 20%;
+    border: 1px solid black;
+    box-shadow: 0 0 5px slategray;
+    overflow-y: auto;
+    height: auto;
+    max-height: 70%;
+    width: 20%; 
+    left: 40%; 
+    font-size: 20px;
+}
+
+.errorWrapper{
+    position: fixed;
+    top: 20%;
+    border: 1px solid black;
+    box-shadow: 0 0 5px slategray;
+    width: 30%; 
+    left: 35%; 
+    font-size: 24px; 
+    text-align: center;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    overflow: auto;
+}
+
+.table th{
+    background-color: rgb(168, 168, 168);
+    color: whitesmoke;
+    border: 1px solid rgb(168, 168, 168) !important;
+}
+
+.table tr:nth-child(odd){
+    background-color: #f2f2f2;
+}
+
+.table tr:hover{
+    background-color: #ddd;
+}
+
+tr{
+    text-align: left;
+    height: 60px;
+}
+
+.buttonWrapper{
+    float: left;
+    width: 100%;
+}
+
+.read{
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    border-color: rgb(18, 96, 214);
+    background-color: rgb(18, 96, 214);
+}
+
+.read:hover{
+    cursor: pointer;
+    border-radius: 1px 1px 1px 1px;
+    border-color: rgb(8, 73, 170);
+    background-color: rgb(8, 73, 170);
+}
+
+.create{
+    width: 100%;
+    color: whitesmoke;
+    border-color: rgb(19, 184, 19);
+    background-color: rgb(19, 184, 19);
+    font-size: 32px;
+    height: 60px;
+}
+
+.create:hover{
+    cursor: pointer;
+    background-color: green;
+    border: green;
+}
+
+.update{
+    width: 100%;
+    color: whitesmoke;
+    border-color: rgb(255, 197, 89);
+    background-color: rgb(255, 197, 89);
+    font-size: 24px;
+    height: 60px;
+}
+
+.update:hover{
+    cursor: pointer;
+    background-color: orange;
+    border: orange;
+}
+
+.delete{
+    width: 100%;
+    color: whitesmoke;
+    border-color: lightcoral;
+    background-color: lightcoral;
+    font-size: 24px;
+    height: 60px;
+}
+
+.delete:hover{
+    cursor: pointer;
+    background-color: red;
+    border: red;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #c0c0c0;
+    color: whitesmoke;
+    text-align: center;
+}
+
+@media (max-width: 1150px){
+    .wrapper, .smallWrapper, .errorWrapper {
+        left: 0;
+        width: 100%;
+        top: 7.8%;
+    }
+
+    .wrapper{ 
+        height: auto;
+    }
+}
